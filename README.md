@@ -1,6 +1,6 @@
-# FrostUI AuthCodeInput
+# FrostUI Dialog
 
-**FrostUI AuthCodeInput** is a free, open-source Auth Code Input component for *JavaScript*.
+**FrostUI Dialog** is a free, open-source Dialog component for *JavaScript*.
 
 It is built on top of the [FrostUI](https://github.com/elusivecodes/FrostUI) library.
 
@@ -28,7 +28,7 @@ It is built on top of the [FrostUI](https://github.com/elusivecodes/FrostUI) lib
 
 ```html
 <script type="text/javascript" src="/path/to/frost-ui-bundle.min.js"></script>
-<script type="text/javascript" src="/path/to/frost-ui-authcodeinput.min.js"></script>
+<script type="text/javascript" src="/path/to/frost-ui-dialog.min.js"></script>
 ```
 
 
