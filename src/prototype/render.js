@@ -29,6 +29,10 @@ export function _render() {
             break;
     }
 
+    if (this._options.centerVertical) {
+        $.addClass(modalDialog, this.constructor.classes.modalDialogCentered);
+    }
+
     $.append(this._node, modalDialog);
 
     const modalContent = $.create('div', {

@@ -10,6 +10,7 @@ Dialog.defaults = {
     buttons: [],
     size: null,
     backdrop: 'static',
+    centerVertical: false,
     closeBtn: true,
     appendTo: null,
 };
@@ -24,6 +25,7 @@ Dialog.classes = {
     modalBody: 'modal-body',
     modalContent: 'modal-content',
     modalDialog: 'modal-dialog',
+    modalDialogCentered: 'modal-dialog-centered',
     modalFooter: 'modal-footer',
     modalHeader: 'modal-header',
     modalLg: 'modal-lg',

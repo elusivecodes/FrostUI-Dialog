@@ -28,9 +28,13 @@
         <div class="mb-4">
             <button class="btn btn-primary ripple" id="backdropBtn" type="button">Backdrop Dialog</button>
         </div>
-        <h4>HTML Dialog</h4>
+        <h4>HTML Content</h4>
         <div class="mb-4">
-            <button class="btn btn-primary ripple" id="htmlBtn" type="button">HTML Dialog</button>
+            <button class="btn btn-primary ripple" id="htmlBtn" type="button">HTML Content</button>
+        </div>
+        <h4>Vertically Centered</h4>
+        <div class="mb-4">
+            <button class="btn btn-primary ripple" id="centeredBtn" type="button">Vertically Centered</button>
         </div>
         <h4>Sizes</h4>
         <div class="mb-4">
@@ -44,6 +48,7 @@
         const confirmBtn = $.findOne('#confirmBtn');
         const customBtn = $.findOne('#customBtn');
         const backdropBtn = $.findOne('#backdropBtn');
+        const centeredBtn = $.findOne('#centeredBtn');
         const htmlBtn = $.findOne('#htmlBtn');
         const smBtn = $.findOne('#smBtn');
         const lgBtn = $.findOne('#lgBtn');
@@ -95,6 +100,15 @@
         $.addEvent(htmlBtn, 'click', () => {
             new UI.Dialog({
                 content: $.parseHTML('<strong>This is a dialog with <a href="#">custom HTML</a> content.</strong>'),
+                closeBtn: false,
+                backdrop: true
+            });
+        });
+
+        $.addEvent(centeredBtn, 'click', () => {
+            new UI.Dialog({
+                content: 'This is a vertically centered dialog.',
+                centerVertical: true,
                 closeBtn: false,
                 backdrop: true
             });

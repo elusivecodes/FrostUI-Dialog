@@ -125,6 +125,10 @@
                 break;
         }
 
+        if (this._options.centerVertical) {
+            $.addClass(modalDialog, this.constructor.classes.modalDialogCentered);
+        }
+
         $.append(this._node, modalDialog);
 
         const modalContent = $.create('div', {
@@ -214,6 +218,7 @@
         buttons: [],
         size: null,
         backdrop: 'static',
+        centerVertical: false,
         closeBtn: true,
         appendTo: null,
     };
@@ -228,6 +233,7 @@
         modalBody: 'modal-body',
         modalContent: 'modal-content',
         modalDialog: 'modal-dialog',
+        modalDialogCentered: 'modal-dialog-centered',
         modalFooter: 'modal-footer',
         modalHeader: 'modal-header',
         modalLg: 'modal-lg',

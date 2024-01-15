@@ -1,6 +1,6 @@
 {
     "name": "@fr0st/ui-dialog",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "FrostUI-Dialog is a free, open-source Dialog component for Javascript.",
     "keywords": [
         "ui",
@@ -42,7 +42,7 @@
         "@rollup/plugin-node-resolve": "^15.2.3",
         "eslint": "^8.56.0",
         "eslint-config-google": "^0.14.0",
-        "rollup": "^4.9.4",
+        "rollup": "^4.9.5",
         "terser": "^5.26.0"
     }
 }
