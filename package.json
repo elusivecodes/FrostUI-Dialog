@@ -1,6 +1,6 @@
 {
     "name": "@fr0st/ui-dialog",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "FrostUI-Dialog is a free, open-source Dialog component for Javascript.",
     "keywords": [
         "ui",
@@ -24,9 +24,7 @@
         "src"
     ],
     "scripts": {
-        "build": "npm run js",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "js": "npm run js-compile && npm run js-minify",
+        "build": "npm run js-compile && npm run js-minify",
         "js-compile": "rollup --config",
         "js-lint": "eslint",
         "js-minify": "terser --compress passes=2 --mangle --source-map \"content=dist/frost-ui-dialog.js.map\" --output dist/frost-ui-dialog.min.js dist/frost-ui-dialog.js"
